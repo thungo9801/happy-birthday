@@ -47,7 +47,7 @@ export default function Home() {
           />
         </div>
       )}
-      <audio ref={audioRef} id="player" repeat>
+      <audio ref={audioRef} id="player">
         <source src="media/hbd.mp3" />
       </audio>
     </main>
