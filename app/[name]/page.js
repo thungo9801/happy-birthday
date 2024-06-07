@@ -187,7 +187,7 @@ const Wish = () => {
   };
 
   const title = (name) => {
-    const wish = "Happy Birthday Ngoi xinh gái!";
+    const wish = "Happy Birthday Ngơi xinh gái!";
     const base_letter = [];
     const name_letter = [];
 
