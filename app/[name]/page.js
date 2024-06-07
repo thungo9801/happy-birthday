@@ -20,7 +20,6 @@ const Wish = () => {
   const color = colorNumber ? colorNumber : 0;
   const [downloading, setDownloading] = useState(false);
   const [downloadedOnce, setDownloadedOnce] = useState(false);
-  const audioRef = useRef();
 
   const router = useRouter();
 
@@ -150,8 +149,6 @@ const Wish = () => {
               })
               .then(() => jsConfetti.clearCanvas());
           }
-
-          audioRef.current.play();
         });
       }, 5000);
 
@@ -271,9 +268,6 @@ const Wish = () => {
           }}
         />
       </main>
-      <audio ref={audioRef} id="player" autoPlay repeat>
-        <source src="media/hbd.mp3" />
-      </audio>
     </div>
   );
 };
